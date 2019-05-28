@@ -10,7 +10,9 @@ router.get("/", function(req,res){
     })
 })
 
-router.put("/burgerList/update" , function(req,res){
+
+// This is still broken
+router.put("/burgers/update" , function(req,res){
     burger.update(req.body.burger_id, function(result){
       console.log(result);
       res.redirect("/");
